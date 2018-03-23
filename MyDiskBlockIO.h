@@ -13,8 +13,7 @@
 #include <sys/stat.h>
 #include <stdio.h>
 
-char* createFile(char * fileName);
-void writFile(char* file, short data[]);
-void readFile(char* file);
-
+int createBlock(char* blockName);
+int writeBlock(int fd, short data [],int offset, int size);
+void readBlock(char* blockName);
 #endif /* MyDiskBlockIO_h */
